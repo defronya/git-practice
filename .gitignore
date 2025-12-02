@@ -1,41 +1,17 @@
-# Prerequisites
-*.d
+# 1. Ignore everything
+*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# 2. Un-ignore directories so git can traverse them.
+#    This is necessary so git can find the files to un-ignore below.
+!*/
 
-# Precompiled Headers
-*.gch
-*.pch
+# 3. Un-ignore the allowed file extensions
+!*.cpp
+!*.h
+!*.txt
+!*.jpg
+!*.jpeg
+!*.png
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# 4. Un-ignore this file itself so it can be committed
+!/.gitignore
